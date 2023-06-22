@@ -46,7 +46,7 @@ var otsuThreshold = function(histogram) {
     });
   
     //print(ui.Chart.array.values(ee.Array(bss), 0, means));
-    print('the threshold is:    ', threshold);
+    print('the threshold is:    ', means.sort(bss).get([-1]));
   
     // Return the mean value corresponding to the maximum BSS.
     return means.sort(bss).get([-1]);
